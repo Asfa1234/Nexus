@@ -1,3 +1,4 @@
+//html 
 <!DOCTYPE html>
 <html lang="en">
 
@@ -54,17 +55,9 @@
 </body>
 
 </html>
-const open_btn = document.querySelector('.open-btn')
-const close_btn = document.querySelector('.close-btn')
-const nav = document.querySelectorAll('.nav')
 
-open_btn.addEventListener('click', () => {
-    nav.forEach(nav_el => nav_el.classList.add('visible'))
-})
 
-close_btn.addEventListener('click', () => {
-    nav.forEach(nav_el => nav_el.classList.remove('visible'))
-})
+//css
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
 * {
@@ -175,3 +168,19 @@ body {
   list-style-type: none;
   padding-left: 20px;
 }
+
+
+
+
+//js
+const open_btn = document.querySelector('.open-btn')
+const close_btn = document.querySelector('.close-btn')
+const nav = document.querySelectorAll('.nav')
+
+open_btn.addEventListener('click', () => {
+    nav.forEach(nav_el => nav_el.classList.add('visible'))
+})
+
+close_btn.addEventListener('click', () => {
+    nav.forEach(nav_el => nav_el.classList.remove('visible'))
+})
